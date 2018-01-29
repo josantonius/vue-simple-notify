@@ -1,0 +1,22 @@
+{
+  "name": "vue-simple-notify",
+  "description": "Simple notify handler component for vue.js",
+  "main": "./dist/vue-simple-notify.min.js",
+  "authors": [
+    "Josantonius <hello@josantonius.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "vuejs",
+    "simple-notify"
+  ],
+  "homepage": "https://github.com/josantonius/vue-simple-notify",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+    <link rel="stylesheet" type="text/css" href="dist/vue-simple-notify.min.css">
+  </head>
+
+  <body>
+
+    <div id="app">
+      <vue-simple-notify
+        :items="[{type: 'success', message: 'Hello world'}"
+      ></vue-simple-notify>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="dist/vue-simple-notify.min.js"></script>
+
+    <script>
+      
+      Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
+
+      new Vue().$mount('#app')
+
+    </script>
+
+  </body>
+
+</html>
