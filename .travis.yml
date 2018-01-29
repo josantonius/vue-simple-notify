@@ -28,12 +28,11 @@ sudo: required
 dist: trusty
 
 script:
-  - npm --frozen-lockfile --non-interactive
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - jdk_switcher use oraclejdk8
   - npm run lint
   - npm run test:coverage && codecov
   - npm run build
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - jdk_switcher use oraclejdk8
 
 after_success:
   - codeclimate-test-reporter < ./test/unit/coverage/lcov.info
