@@ -19,7 +19,7 @@ script:
   - npm run unit
   - npm run bundle
   - npm run build
-  - npm run lint
+  - eslint --ext .js,.vue src test/e2e/specs
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
