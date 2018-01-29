@@ -9,6 +9,7 @@ node_js:
   - "6"
 
 script:
+  - npm install jest expect
   - npm run lint
   - npm run unit
   - npm run bundle
