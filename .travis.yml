@@ -1,5 +1,10 @@
+os:
+  - linux
+
 sudo: false
+
 language: node_js
+
 node_js:
   - "6"
 
@@ -8,7 +13,9 @@ before_install:
 
 script:
   - npm run lint
-  - npm run test
+  - npm run unit
+  - npm run bundle
+  - npm run build
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
