@@ -1,6 +1,5 @@
 os:
   - linux
-  - osx
 
 language: node_js
 
@@ -25,12 +24,8 @@ sudo: required
 
 dist: trusty
 
-before_script:
-  - npm install
-
 script:
   - jdk_switcher use oraclejdk8
-  - npm run finish
 
 after_success:
   - codeclimate-test-reporter < ./test/unit/coverage/lcov.info
