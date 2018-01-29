@@ -1,8 +1,8 @@
-[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![cdnjs](https://img.shields.io/cdnjs/v/vue-simple-notify.svg)](https://img.shields.io/cdnjs/v/vue-simple-notify) [![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e51e4c06b0b54ce493454d4f895a3ef3)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-1abc9c.svg)](https://standardjs.com/) [![CodeCov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/kB-4-1abc9c.svg)](dist) [![No Dependencies](https://img.shields.io/gemnasium/Josantonius/vue-simple-notify.svg?style=flat-square)
+[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![cdnjs](https://img.shields.io/cdnjs/v/vue-simple-notify.svg)](https://unpkg.com/vue-simple-notify@1.0.0/dist/) [![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e51e4c06b0b54ce493454d4f895a3ef3)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-1abc9c.svg)](https://standardjs.com/) [![CodeCov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/kB-4-1abc9c.svg)](dist) [![No Dependencies](https://img.shields.io/gemnasium/Josantonius/vue-simple-notify.svg?style=flat-square)
 
 [Versión en español](README-ES.md)
 
-Simple notify handler component for Vue.js
+Simple notify handler component for Vue.js.
 
 <p align="center">
   <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
@@ -61,42 +61,54 @@ Vue.component('VueSimpleNotify', VueSimpleNotify)
 ></vue-simple-notify>
 ```
 
-### CDN
+### [CDN](https://unpkg.com/vue-simple-notify/dist/)
+
+Include styles:
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Include vue-simple-notify.min.css -->
-    <link href="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  </head>
-  <body>
-    <div id="app">
-      <!-- Use the component -->
-      <vue-simple-notify
-        :items="[{
-          type: 'Success',
-          color: '#2ecc71',
-          message: 'Hello world'
-        }]"
-      ></vue-simple-notify>
-    </div>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <!-- Include vue-simple-notify.min.js -->
-    <script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
-    <script>
-      /* Register the component */
-      Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
-      new Vue().$mount('#app')
-    </script>
-  </body>
-</html>
+<link href="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.css" rel="stylesheet">
+```
+
+Include scripts:
+
+```html
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
 ```
 
 ## Examples
 
 Examples of use for this component:
+
+### - Using [CDN](#cdn):
+
+```html
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  </head>
+
+  <body>
+    <div id="app">
+      <vue-simple-notify :items="[{}]"></vue-simple-notify>
+    </div>
+    
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
+
+    <script>
+      Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
+
+      new Vue().$mount('#app')
+    </script>
+
+  </body>
+
+</html>
+```
 
 ### - Adding [items](#items):
 
@@ -224,6 +236,8 @@ vueSimpleNotify.clear()
 
 ## Props
 
+Available props in this component:
+
 ### :items
 
 Description: Notifications array.
@@ -252,6 +266,8 @@ Default: `500`
 
 ## Events
 
+Available events in this component:
+
 ### @onDismiss
 
 It is triggered each time a notification is dismissed.
@@ -269,6 +285,8 @@ onDismiss: function onDismiss (index) { }
 ```
 
 ## Methods
+
+Available methods in this component:
 
 ### dismiss
 
