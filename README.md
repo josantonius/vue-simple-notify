@@ -89,14 +89,12 @@ Vue.component('VueSimpleNotify', VueSimpleNotify)
         }]"
       ></vue-simple-notify>
     </div>
-    <!-- Include vue.js -->
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <!-- Include vue-simple-notify.min.js -->
     <script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
     <script>
       /* Register the component */
       Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
-      /* Mount the app */
       new Vue().$mount('#app')
     </script>
   </body>
@@ -111,7 +109,7 @@ Examples of use for this component:
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
 ></vue-simple-notify>
 ```
 
@@ -141,7 +139,7 @@ new Vue({
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   :delay="delay"
 ></vue-simple-notify>
 ```
@@ -163,7 +161,7 @@ new Vue({
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   @onDismiss="onDismiss"
 ></vue-simple-notify>
 ```
@@ -189,7 +187,7 @@ new Vue({
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   ref="vsn"
 ></vue-simple-notify>
 ```
@@ -212,7 +210,7 @@ vueSimpleNotify.dismiss(1)
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   ref="vsn"
 ></vue-simple-notify>
 ```
@@ -237,6 +235,8 @@ Component props:
 
 ### :items
 
+Notifications array:
+
 Type: `Array`
 
 Required: `true`
@@ -247,9 +247,9 @@ Default: `null`
 <vue-simple-notify :items="[]">
 ```
 
-Notifications array.
-
 ### :delay
+
+Time interval between notifications when displayed:
 
 Type: `Number`
 
@@ -258,8 +258,6 @@ Default: `500`
 ```html
 <vue-simple-notify :items="[]" :delay="1000">
 ```
-
-Time interval between notifications when displayed.
 
 ## Events
 
@@ -317,7 +315,7 @@ Install dependencies:
 
     $ npm install
 
-Run [unit tests](tests):
+Run [unit tests](test):
 
     $ npm run test
 
@@ -355,8 +353,8 @@ If you would like to help, please take a look at the list of
 **Pull requests**
 
 * [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Run the command `composer install` to install the dependencies.
-  This will also install the [dev dependencies](https://getcomposer.org/doc/03-cli.md#install).
+* Run the command `npm install` to install the dependencies.
+  This will also install the dev dependencies.
 * Run the [tests](#tests).
 * Create a **branch**, **commit**, **push** and send me a
   [pull request](https://help.github.com/articles/using-pull-requests).
