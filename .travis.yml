@@ -12,8 +12,7 @@ cache:
     - node_modules
 
 install:
-  - npm install
-  - npm update
+  - npm install -g codecov
 
 before_install:
  - export CHROME_BIN=/usr/bin/google-chrome
@@ -29,6 +28,11 @@ sudo: required
 dist: trusty
 
 script:
+  - npm --frozen-lockfile --non-interactive
+  - npm run lint
+  - npm run test:coverage && codecov
+  - npm run build
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - jdk_switcher use oraclejdk8
 
 after_success:
