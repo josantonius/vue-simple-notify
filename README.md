@@ -33,7 +33,7 @@ Simple notify handler component for Vue.js
 
 <p align="center">
   <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
-    <img src="https://github.com/Josantonius/vue-simple-notify/vue-simple-notify.gif">
+    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
   </a>
 </p>
 
