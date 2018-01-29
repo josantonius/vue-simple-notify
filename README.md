@@ -1,10 +1,3 @@
-
-<p align="center">
-  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
-    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
-  </a>
-</p>
-
 [![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify.svg) [![cdnjs](https://img.shields.io/cdnjs/v/vue-simple-notify.svg)](https://img.shields.io/cdnjs/v/vue-simple-notify.svg) ![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)  [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE)  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e51e4c06b0b54ce493454d4f895a3ef3)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![ Standard](https://img.shields.io/badge/js-standard-1abc9c.svg)](https://standardjs.com/) [![CodeCov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![No Dependencies](https://img.shields.io/gemnasium/Josantonius/vue-simple-notify.svg?style=flat-square)
 
 [Versión en español](README-ES.md)
@@ -27,6 +20,12 @@ Simple notify handler component for Vue.js
 
 ---
 
+<p align="center">
+  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
+    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
+  </a>
+</p>
+
 **Features**
 
 - AJAX Support
@@ -37,6 +36,7 @@ Simple notify handler component for Vue.js
 ## Demo
 
 [GitHub](https://josantonius.github.io/vue-simple-notify/)
+
 [Codepen](https://josantonius.github.io/vue-simple-notify/)
 
 ## Quick Start
