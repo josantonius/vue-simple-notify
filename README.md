@@ -22,6 +22,12 @@ Simple notify handler component for Vue.js
 
 ---
 
+<p align="center">
+  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
+    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
+  </a>
+</p>
+
 **Features**
 
 - AJAX Support
@@ -30,12 +36,6 @@ Simple notify handler component for Vue.js
 - Zero dependencies
 
 ## Demo
-
-<p align="center">
-  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
-    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
-  </a>
-</p>
 
 [GitHub](https://josantonius.github.io/vue-simple-notify/)
 [Codepen](https://josantonius.github.io/vue-simple-notify/)
@@ -108,7 +108,7 @@ Vue.component('VueSimpleNotify', VueSimpleNotify)
 
 Examples of use for this component:
 
-### - Adding `[items](:items)`:
+### - Adding [items](#items):
 
 ```html
 <vue-simple-notify
@@ -138,7 +138,7 @@ new Vue({
 })
 ```
 
-### - Setting the `[delay](:delay)` between notifications:
+### - Setting the [delay](#delay) between notifications:
 
 ```html
 <vue-simple-notify
@@ -160,7 +160,7 @@ new Vue({
 })
 ```
 
-### - Listening to the `[@onDismiss](@onDismiss)` event:
+### - Listening to the [@onDismiss](#ondismiss) event:
 
 ```html
 <vue-simple-notify
@@ -186,7 +186,7 @@ new Vue({
 })
 ```
 
-### - `[Removing](dismiss)` items from the component.
+### - [Removing](#dismiss) items from the component.
 
 ```html
 <vue-simple-notify
@@ -209,7 +209,7 @@ const vueSimpleNotify = new Vue({
 vueSimpleNotify.dismiss(1)
 ```
 
-### - `[Clearing](clear)` all elements.
+### - [Clearing](#clear) all elements.
 
 ```html
 <vue-simple-notify
@@ -237,7 +237,9 @@ vueSimpleNotify.clear()
 ### :items
 
 Type: `Array`
+
 Required: `true`
+
 Default: null
 
 Notifications array.
@@ -249,6 +251,7 @@ Notifications array.
 ### :delay
 
 Type: `Number`
+
 Default: `500`
 
 Time interval between notifications when displayed.
