@@ -13,7 +13,6 @@ install:
   - npm update
 
 script:
-  - npm run lint
   - npm run unit
   - npm run bundle
   - npm run build
