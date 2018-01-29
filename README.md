@@ -68,7 +68,7 @@ Vue.component('VueSimpleNotify', VueSimpleNotify)
 Include styles:
 
 ```html
-<link href="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.css" rel="stylesheet">
+<link href="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.css">
 ```
 
 Include scripts:
@@ -94,8 +94,9 @@ Examples of use for this component:
   </head>
 
   <body>
+
     <div id="app">
-      <vue-simple-notify :items="[{}]"></vue-simple-notify>
+      <vue-simple-notify :items="[]"></vue-simple-notify>
     </div>
     
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -362,7 +363,7 @@ If you would like to help, please take a look at the list of
 **Pull requests**
 
 * [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Run the [tests](#tests).
+* Make changes and run the [tests](#tests).
 * Create a **branch**, **commit**, **push** and send me a
   [pull request](https://help.github.com/articles/using-pull-requests).
 
