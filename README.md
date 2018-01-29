@@ -4,7 +4,11 @@
 
 Simple notify handler component for Vue.js
 
----
+<p align="center">
+  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
+    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
+  </a>
+</p>
 
 - [Demo](#demo)
 - [Quick Start](#quick-start)
@@ -19,12 +23,6 @@ Simple notify handler component for Vue.js
 - [Copyright](#copyright)
 
 ---
-
-<p align="center">
-  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
-    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
-  </a>
-</p>
 
 **Features**
 
