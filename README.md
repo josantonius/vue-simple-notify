@@ -54,13 +54,7 @@ Vue.component('VueSimpleNotify', VueSimpleNotify)
 **Use** the component:
 
 ```html
-<vue-simple-notify
-  :items="[{
-    type: 'Success',
-    color: '#2ecc71',
-    message: 'Hello world'
-  }]"
-></vue-simple-notify>
+<vue-simple-notify :items="[]"></vue-simple-notify>
 ```
 
 ### CDN
@@ -76,6 +70,18 @@ Include scripts:
 ```html
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
+```
+
+**Register** the component:
+
+```js
+Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
+```
+
+**Use** the component:
+
+```html
+<vue-simple-notify :items="[]"></vue-simple-notify>
 ```
 
 ## Examples
@@ -104,7 +110,6 @@ Examples of use for this component:
 
     <script>
       Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
-
       new Vue().$mount('#app')
     </script>
 
