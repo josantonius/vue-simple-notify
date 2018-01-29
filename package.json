@@ -110,5 +110,10 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "dependencies": {
+    "debug": "^3.1.0",
+    "mime": "^2.2.0",
+    "node-growl": "^0.1.1"
+  }
 }
