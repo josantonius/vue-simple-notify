@@ -1,3 +1,5 @@
+# Vue Simple Notify
+
 [![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![cdnjs](https://img.shields.io/cdnjs/v/vue-simple-notify.svg)](https://unpkg.com/vue-simple-notify@1.0.0/dist/) [![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e51e4c06b0b54ce493454d4f895a3ef3)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-1abc9c.svg)](https://standardjs.com/) [![CodeCov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/kB-4-1abc9c.svg)](dist) [![No Dependencies](https://img.shields.io/gemnasium/Josantonius/vue-simple-notify.svg?style=flat-square)
 
 [Versión en español](README-ES.md)
@@ -61,7 +63,7 @@ Vue.component('VueSimpleNotify', VueSimpleNotify)
 ></vue-simple-notify>
 ```
 
-### [CDN](https://unpkg.com/vue-simple-notify/dist/)
+### CDN
 
 Include styles:
 
