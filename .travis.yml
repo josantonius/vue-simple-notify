@@ -8,8 +8,11 @@ language: node_js
 node_js:
   - "6"
 
+install:
+  - npm install
+  - npm update
+
 script:
-  - npm install jest expect
   - npm run lint
   - npm run unit
   - npm run bundle
