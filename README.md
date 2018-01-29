@@ -231,11 +231,9 @@ vueSimpleNotify.clear()
 
 ## Props
 
-Component props:
-
 ### :items
 
-Notifications array:
+Description: Notifications array.
 
 Type: `Array`
 
@@ -249,7 +247,7 @@ Default: `null`
 
 ### :delay
 
-Time interval between notifications when displayed:
+Description: Time interval between notifications when displayed.
 
 Type: `Number`
 
@@ -260,8 +258,6 @@ Default: `500`
 ```
 
 ## Events
-
-Component events:
 
 ### @onDismiss
 
@@ -323,11 +319,11 @@ Run [ESLint](https://eslint.org/) to ensure that code style is compatible with [
 
     $ npm run lint
 
-Run serve with hot reload:
+Run [serve](docs) with hot reload:
 
     $ npm run dev
 
-Build distribution with minification:
+Build [distribution](dist) with minification:
 
     $ npm run bundle
 
@@ -353,8 +349,6 @@ If you would like to help, please take a look at the list of
 **Pull requests**
 
 * [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Run the command `npm install` to install the dependencies.
-  This will also install the dev dependencies.
 * Run the [tests](#tests).
 * Create a **branch**, **commit**, **push** and send me a
   [pull request](https://help.github.com/articles/using-pull-requests).
