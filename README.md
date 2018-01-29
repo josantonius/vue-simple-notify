@@ -42,7 +42,7 @@ Simple notify handler component for Vue.js.
 
     $ npm install vue-simple-notify
 
-**Register** the component:
+Register the component:
 
 ```js
 import Vue from 'vue'
@@ -51,7 +51,7 @@ import VueSimpleNotify from 'VueSimpleNotify'
 Vue.component('VueSimpleNotify', VueSimpleNotify)
 ```
 
-**Use** the component:
+Use the component:
 
 ```html
 <vue-simple-notify :items="[]"></vue-simple-notify>
@@ -72,13 +72,13 @@ Include scripts:
 <script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
 ```
 
-**Register** the component:
+Register the component:
 
 ```js
 Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
 ```
 
-**Use** the component:
+Use the component:
 
 ```html
 <vue-simple-notify :items="[]"></vue-simple-notify>
