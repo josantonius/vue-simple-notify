@@ -11,7 +11,7 @@ app.html
 config.js
 bower.json
 bundle.html
-circle.yml
+CHANGELOG.md
 CONDUCT.md
 package.json
 package-lock.json

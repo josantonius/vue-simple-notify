@@ -1,54 +1,48 @@
 # Vue Simple Notify
 
-[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify.svg) [![cdnjs](https://img.shields.io/cdnjs/v/vue-simple-notify.svg)](https://img.shields.io/cdnjs/v/vue-simple-notify.svg) ![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)  [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE)  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e51e4c06b0b54ce493454d4f895a3ef3)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![ Standard](https://img.shields.io/badge/js-standard-1abc9c.svg)](https://standardjs.com/) [![CodeCov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![No Dependencies](https://img.shields.io/gemnasium/Josantonius/vue-simple-notify.svg?style=flat-square)
+[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![VueJS v2.x compatible](https://img.shields.io/badge/vue-2.x-41b883.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/614f0639cbc94aec809941172436fe2c)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-03a9f4.svg)](https://standardjs.com/) [![codecov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/minified-~4kB-009688.svg)](dist) [![Dependency Status](https://beta.gemnasium.com/badges/github.com/Josantonius/vue-simple-notify.svg)](https://beta.gemnasium.com/projects/github.com/Josantonius/vue-simple-notify)
 
-[Versión en español](README-ES.md)
+[English version](README.md)
 
-Simple notify handler component for Vue.js
+Un componente sencillo para creación de notificaciones con Vue.js.
+
+<p align="center">
+  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
+    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
+  </a>
+</p>
 
 ---
 
 - [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Examples](#examples)
+- [Inicio rápido](#inicio-rápido)
+- [Ejemplos](#ejemplos)
 - [Props](#props)
-- [Events](#events)
-- [Methods](#methods)
+- [Eventos](#eventos)
+- [Métodos](#métodos)
 - [Tests](#tests)
-- [TODO](#-todo)
-- [Contribute](#contribute)
-- [License](#license)
+- [Tareas pendientes](#-tareas-pendientes)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
 - [Copyright](#copyright)
 
 ---
 
-**Features**
-
-- AJAX Support
-- +95% Test Coverage
-- ~4kb minified with CSS
-- Zero dependencies
-
 ## Demo
 
-<p align="center">
-  <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
-    <img src="https://josantonius.github.io/vue-simple-notify/vue-simple-notify.gif">
-  </a>
-</p>
-
 [GitHub](https://josantonius.github.io/vue-simple-notify/)
-[Codepen](https://josantonius.github.io/vue-simple-notify/)
 
-## Quick Start
+[CodePen](https://codepen.io/Josantonius/pen/PQoxXd/)
+
+## Inicio rápido
 
 ### NPM
 
-**Install** the package:
+Instalar el paquete:
 
     $ npm install vue-simple-notify
 
-**Register** the component:
+Registrar el componente:
 
 ```js
 import Vue from 'vue'
@@ -57,62 +51,78 @@ import VueSimpleNotify from 'VueSimpleNotify'
 Vue.component('VueSimpleNotify', VueSimpleNotify)
 ```
 
-**Use** the component:
+Usar el componente:
 
 ```html
-<vue-simple-notify
-  :items="[{
-    type: 'Success',
-    color: '#2ecc71',
-    message: 'Hello world'
-  }]"
-></vue-simple-notify>
+<vue-simple-notify :items="[]"></vue-simple-notify>
 ```
 
 ### CDN
 
+Include styles:
+
+```html
+<link href="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.css">
+```
+
+Include scripts:
+
+```html
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
+```
+
+Registrar el componente:
+
+```js
+Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
+```
+
+Usar el componente:
+
+```html
+<vue-simple-notify :items="[]"></vue-simple-notify>
+```
+
+## Ejemplos
+
+Ejemplos de uso para este componente:
+
+### - Usando [CDN](#cdn):
+
 ```html
 <!DOCTYPE html>
 <html>
+
   <head>
-    <!-- Include vue-simple-notify.min.css -->
     <link href="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   </head>
+
   <body>
+
     <div id="app">
-      <!-- Use the component -->
-      <vue-simple-notify
-        :items="[{
-          type: 'Success',
-          color: '#2ecc71',
-          message: 'Hello world'
-        }]"
-      ></vue-simple-notify>
+      <vue-simple-notify :items="[]"></vue-simple-notify>
     </div>
-    <!-- Include vue.js -->
+    
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <!-- Include vue-simple-notify.min.js -->
     <script src="https://unpkg.com/vue-simple-notify/dist/vue-simple-notify.min.js"></script>
+
     <script>
-      /* Register the component */
       Vue.component('VueSimpleNotify', VueSimpleNotify.VueSimpleNotify)
-      /* Mount the app */
       new Vue().$mount('#app')
     </script>
+
   </body>
+
 </html>
 ```
 
-## Examples
-
-Examples of use for this component:
-
-### - Adding `[items](:items)`:
+### - Agregando [notificaciones](#items):
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
 ></vue-simple-notify>
 ```
 
@@ -124,13 +134,13 @@ new Vue({
     return {
       items: [
         {
-          message: 'example of error message.'
+          message: 'ejemplo de mensaje de error.'
         },
         {
           type: 'Success',
           color: '#2ecc71',
           dismissable: false,
-          message: 'example of success message.'
+          message: 'ejemplo de mensaje de éxito.'
         }
       ]
     }
@@ -138,11 +148,11 @@ new Vue({
 })
 ```
 
-### - Setting the `[delay](:delay)` between notifications:
+### - Ajustando [retraso](#delay) entre notificaciones:
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   :delay="delay"
 ></vue-simple-notify>
 ```
@@ -160,11 +170,11 @@ new Vue({
 })
 ```
 
-### - Listening to the `[@onDismiss](@onDismiss)` event:
+### - Escuchando el evento [@onDismiss](#ondismiss):
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   @onDismiss="onDismiss"
 ></vue-simple-notify>
 ```
@@ -186,11 +196,11 @@ new Vue({
 })
 ```
 
-### - `[Removing](dismiss)` items from the component.
+### - [Eliminando](#dismiss) notificaciones desde el componente.
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   ref="vsn"
 ></vue-simple-notify>
 ```
@@ -209,11 +219,11 @@ const vueSimpleNotify = new Vue({
 vueSimpleNotify.dismiss(1)
 ```
 
-### - `[Clearing](clear)` all elements.
+### - [Eliminando](#clear) todas las notificaciones.
 
 ```html
 <vue-simple-notify
-  :items="items
+  :items="items"
   ref="vsn"
 ></vue-simple-notify>
 ```
@@ -234,13 +244,17 @@ vueSimpleNotify.clear()
 
 ## Props
 
+Props disponibles en este componente:
+
 ### :items
 
-Type: `Array`
-Required: `true`
-Default: null
+Descripción: Array con notificaciones.
 
-Notifications array.
+Tipo: `Array`
+
+Requerido: `true`
+
+Por defecto: `null`
 
 ```html
 <vue-simple-notify :items="[]">
@@ -248,50 +262,55 @@ Notifications array.
 
 ### :delay
 
-Type: `Number`
-Default: `500`
+Descripción: Intervalo de tiempo entre notificaciones.
 
-Time interval between notifications when displayed.
+Tipo: `Number`
+
+Por defecto: `500`
 
 ```html
 <vue-simple-notify :items="[]" :delay="1000">
 ```
 
-## Events
+## Eventos
+
+Eventos disponibles en este componente:
 
 ### @onDismiss
 
-It is triggered each time a notification is dismissed.
+Se activa cada vez que se descarta una notificación.
 
 ```js
 onDismiss: function onDismiss (index) { }
 ```
 
-| Attribute | Type | Description
+| Atributo | Tipo | Descripción
 | --- | --- | --- |
-| index | `Number` | Notification index.
+| index | `Number` | Índice de la notificación.
 
 ```html
 <vue-simple-notify :items="[]" :delay="1000" @onDismiss="onDismiss">
 ```
 
-## Methods
+## Métodos
+
+Métodos disponibles en este componente:
 
 ### dismiss
 
-Dismiss a notification by a index.
+Descarta una notificación a través de su índice.
 
 ```js
-vueSimpleNotify.dismiss(0)
+vueSimpleNotify.dismiss(index)
 ```
 
-| Attribute | Type | Description | Required
+| Atributo | Tipo | Descripción | Requerido
 | --- | --- | --- | --- |
-| index | `Number` | Notification index. | `true`
+| index | `Number` | Índice de la notificación. | `true`
 
 ### clear
 
-Clear all notifications.
+Borrar todas las notificaciones.
 
 ```js
 vueSimpleNotify.clear()
@@ -299,70 +318,70 @@ vueSimpleNotify.clear()
 
 ## Tests 
 
-Clone the repository:
+Clonar el repositorio:
 
     $ git clone https://github.com/Josantonius/vue-simple-notify.git vue-simple-notify
 
-Go to the directory:
+Ir al directorio:
 
     $ cd vue-simple-notify
 
-Install dependencies:
+Instalar dependencias:
 
     $ npm install
 
-Run [unit tests](tests):
+Ejecutar [pruebas unitarias](test):
 
     $ npm run test
 
-Run [ESLint](https://eslint.org/) to ensure that code style is compatible with [Standar JavaScript](https://standardjs.com/):
+Ejecutar [ESLint](https://eslint.org/) para validar que el estilo de código es compatible con el [Standar JavaScript](https://standardjs.com/):
 
     $ npm run lint
 
-Run serve with hot reload:
+Ejecutar [serve](docs) con recarga en caliente:
 
     $ npm run dev
 
-Build distribution with minification:
+Montar [distribución](dist) con minificación:
 
     $ npm run bundle
 
-Build [demo](docs) for production with minification:
+Montar [demo](docs) para producción con minificación:
 
     $ npm run build
 
-Run all the above:
+Ejecutar todo lo anterior:
 
     $ npm run finish
 
-## ☑ TODO
+## ☑ Tareas pendientes
 
-- [ ] Add new feature.
-- [ ] Improve tests.
-- [ ] Improve documentation.
+- [ ] Corregir error al intentar pasar las pruebas de ESlint en [Travis CI](.travis.yml).
+- [ ] Corregir error al intentar pasar las pruebas de E2E en [Travis CI](.travis.yml).
+- [ ] Añadir nueva funcionalidad.
+- [ ] Mejorar pruebas.
+- [ ] Mejorar documentación.
 
-## Contribute
+## Contribuir
 
-If you would like to help, please take a look at the list of
-[issues](https://github.com/Josantonius/vue-simple-notify/issues) or the [To Do](#-todo) checklist.
+Si deseas colaborar, puedes echar un vistazo a la lista de
+[issues](https://github.com/Josantonius/vue-simple-notify/issues) o [tareas pendientes](#-tareas-pendientes).
 
 **Pull requests**
 
 * [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Run the command `composer install` to install the dependencies.
-  This will also install the [dev dependencies](https://getcomposer.org/doc/03-cli.md#install).
-* Run the [tests](#tests).
-* Create a **branch**, **commit**, **push** and send me a
-  [pull request](https://help.github.com/articles/using-pull-requests).
+* Realiza modificaciones y ejecuta las [pruebas](#tests).
+* Crea una nueva rama (**branch**), **commit**, **push** y envíame un
+  [pull request](https://help.github.com/articles/using-pull-requests)
 
-## License
+## Licencia
 
-This project is licensed under **MIT license**. See the [LICENSE](LICENSE) file for more info.
+Este proyecto está licenciado bajo **licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más información.
 
 ## Copyright
 
 2018 Josantonius, [josantonius.com](https://josantonius.com/)
 
-If you find it useful, let me know :wink:
+Si te ha resultado útil, házmelo saber :wink:
 
-You can contact me on [Twitter](https://twitter.com/Josantonius) or through my [email](mailto:hello@josantonius.com).
+Puedes contactarme en [Twitter](https://twitter.com/Josantonius) o a través de mi [correo electrónico](mailto:hello@josantonius.com).

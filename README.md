@@ -1,6 +1,6 @@
 # Vue Simple Notify
 
-[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/614f0639cbc94aec809941172436fe2c)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-03a9f4.svg)](https://standardjs.com/) [![codecov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/kB-4-009688.svg)](dist) [![Dependency Status](https://beta.gemnasium.com/badges/github.com/Josantonius/vue-simple-notify.svg)](https://beta.gemnasium.com/projects/github.com/Josantonius/vue-simple-notify)
+[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![VueJS v2.x compatible](https://img.shields.io/badge/vue-2.x-41b883.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/614f0639cbc94aec809941172436fe2c)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-03a9f4.svg)](https://standardjs.com/) [![codecov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/minified-~4kB-009688.svg)](dist) [![Dependency Status](https://beta.gemnasium.com/badges/github.com/Josantonius/vue-simple-notify.svg)](https://beta.gemnasium.com/projects/github.com/Josantonius/vue-simple-notify)
 
 [Versión en español](README-ES.md)
 
@@ -32,13 +32,13 @@ Simple notify handler component for Vue.js.
 
 [GitHub](https://josantonius.github.io/vue-simple-notify/)
 
-[Codepen](https://josantonius.github.io/vue-simple-notify/)
+[CodePen](https://codepen.io/Josantonius/pen/PQoxXd/)
 
 ## Quick Start
 
 ### NPM
 
-**Install** the package:
+Install the package:
 
     $ npm install vue-simple-notify
 
@@ -219,7 +219,7 @@ const vueSimpleNotify = new Vue({
 vueSimpleNotify.dismiss(1)
 ```
 
-### - [Clearing](#clear) all elements.
+### - [Removing](#clear) all elements.
 
 ```html
 <vue-simple-notify
@@ -356,6 +356,8 @@ Run all the above:
 
 ## ☑ TODO
 
+- [ ] Fix error when trying to pass ESlint tests in [Travis CI](.travis.yml).
+- [ ] Fix error when trying to pass E2E tests in [Travis CI](.travis.yml).
 - [ ] Add new feature.
 - [ ] Improve tests.
 - [ ] Improve documentation.
