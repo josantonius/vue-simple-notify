@@ -4,7 +4,7 @@
 
 [English version](README.md)
 
-Un componente sencillo para creación de notificaciones con Vue.js.
+Un sencillo componente para creación de notificaciones con Vue.js.
 
 <p align="center">
   <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">

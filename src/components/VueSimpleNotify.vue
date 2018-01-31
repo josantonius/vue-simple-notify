@@ -1,27 +1,25 @@
 <template>
-  <div id="vue-simple-notify">
-    <transition-group name="veh-list" tag="div">
+  <transition-group id="vue-simple-notify" name="veh-list" tag="div">
+    <div
+      v-for="notification in notifications"
+      :key="notification.index"
+    >
       <div
-        v-for="(notification, index) in notifications"
-        :key="notification.index"
+        :style="{ color: notification.color }"
+        class="veh-notify"
       >
         <div
-          :style="{ color: notification.color }"
-          class="veh-notify"
-        >
-          <div
-            @click="dismiss(index)"
-            v-if="notification.dismissable"
-            class="veh-dismissable">&#10005;
-          </div>
-            <p>
-              <span class="veh-type">{{ notification.type }}:</span>
-              <span class="veh-message">{{ notification.message }}</span>
-            </p>
-          </div>
+          @click="dismiss(notification.index)"
+          v-if="notification.dismissable"
+          class="veh-dismissable">&#10005;
         </div>
-    </transition-group>
-  </div>
+          <p>
+            <span class="veh-type">{{ notification.type }}:</span>
+            <span class="veh-message">{{ notification.message }}</span>
+          </p>
+        </div>
+      </div>
+  </transition-group>
 </template>
 
 <script>
@@ -71,11 +69,9 @@ export default {
   {
     /**
      * Normalize parameters by adding optional parameters.
-     *
-     * @return {Array}
      */
     normalizeParams: function normalizeParams () {
-      return this.items.map(function (obj, index) {
+      this.items.map(function (obj, index) {
         obj.index = index
         obj.dismissable = typeof obj.dismissable !== 'undefined' ? obj.dismissable : true
         obj.type = typeof obj.type !== 'undefined' ? obj.type : 'Error'

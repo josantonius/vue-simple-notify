@@ -63,6 +63,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^6.0.3",
     "css-loader": "^0.28.0",
+    "debug": "^3.1.0",
     "eslint": "^4.16.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -78,7 +79,9 @@
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.1.4",
     "jest-serializer-vue": "^0.3.0",
+    "mime": "^2.2.0",
     "nightwatch": "^0.9.12",
+    "node-growl": "^0.1.1",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
@@ -100,10 +103,7 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.11.1",
-    "webpack-merge": "^4.1.0",
-    "debug": "^3.1.0",
-    "mime": "^2.2.0",
-    "node-growl": "^0.1.1"
+    "webpack-merge": "^4.1.0"
   },
   "engines": {
     "node": ">= 6.0.0",
