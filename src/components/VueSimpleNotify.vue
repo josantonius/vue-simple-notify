@@ -107,6 +107,12 @@ export default {
     clear: function clear () {
       this.notifications = []
     }
+  },
+  watch:
+  {
+    items: function items () {
+      this.normalizeParams()
+    }
   }
 }
 </script>
