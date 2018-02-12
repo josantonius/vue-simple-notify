@@ -112,6 +112,7 @@ export default {
   {
     items: function items () {
       this.normalizeParams()
+      this.display(this)
     }
   }
 }
