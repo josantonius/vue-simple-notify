@@ -1,6 +1,7 @@
 # Vue Simple Notify
 
-[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![VueJS v2.x compatible](https://img.shields.io/badge/vue-2.x-41b883.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/614f0639cbc94aec809941172436fe2c)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-03a9f4.svg)](https://standardjs.com/) [![codecov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/minified-~4kB-009688.svg)](dist) [![Dependency Status](https://beta.gemnasium.com/badges/github.com/Josantonius/vue-simple-notify.svg)](https://beta.gemnasium.com/projects/github.com/Josantonius/vue-simple-notify)
+[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify)
+[![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE)
 
 [English version](README.md)
 
@@ -8,7 +9,7 @@ Un sencillo componente para creación de notificaciones con Vue.js.
 
 <p align="center">
   <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
-    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
+    <img src="https://josantonius.github.io/vue-simple-notify/static/vue-simple-notify.gif">
   </a>
 </p>
 
@@ -21,10 +22,8 @@ Un sencillo componente para creación de notificaciones con Vue.js.
 - [Eventos](#eventos)
 - [Métodos](#métodos)
 - [Tests](#tests)
-- [Tareas pendientes](#-tareas-pendientes)
-- [Contribuir](#contribuir)
+- [Patrocinar](#patrocinar)
 - [Licencia](#licencia)
-- [Copyright](#copyright)
 
 ---
 
@@ -40,7 +39,7 @@ Un sencillo componente para creación de notificaciones con Vue.js.
 
 Instalar el paquete:
 
-    $ npm install vue-simple-notify
+    npm install vue-simple-notify
 
 Registrar el componente:
 
@@ -88,7 +87,7 @@ Usar el componente:
 
 Ejemplos de uso para este componente:
 
-### - Usando [CDN](#cdn):
+### - Usando [CDN](#cdn)
 
 ```html
 <!DOCTYPE html>
@@ -118,7 +117,7 @@ Ejemplos de uso para este componente:
 </html>
 ```
 
-### - Agregando [notificaciones](#items):
+### - Agregando [notificaciones](#items)
 
 ```html
 <vue-simple-notify
@@ -148,7 +147,7 @@ new Vue({
 })
 ```
 
-### - Ajustando [retraso](#delay) entre notificaciones:
+### - Ajustando [retraso](#delay) entre notificaciones
 
 ```html
 <vue-simple-notify
@@ -170,7 +169,7 @@ new Vue({
 })
 ```
 
-### - Escuchando el evento [@onDismiss](#ondismiss):
+### - Escuchando el evento [@onDismiss](#ondismiss)
 
 ```html
 <vue-simple-notify
@@ -196,7 +195,7 @@ new Vue({
 })
 ```
 
-### - [Eliminando](#dismiss) notificaciones desde el componente.
+### - [Eliminando](#dismiss) notificaciones desde el componente
 
 ```html
 <vue-simple-notify
@@ -219,7 +218,7 @@ const vueSimpleNotify = new Vue({
 vueSimpleNotify.dismiss(1)
 ```
 
-### - [Eliminando](#clear) todas las notificaciones.
+### - [Eliminando](#clear) todas las notificaciones
 
 ```html
 <vue-simple-notify
@@ -316,72 +315,52 @@ Borrar todas las notificaciones.
 vueSimpleNotify.clear()
 ```
 
-## Tests 
+## Tests
 
 Clonar el repositorio:
 
-    $ git clone https://github.com/Josantonius/vue-simple-notify.git vue-simple-notify
+    git clone https://github.com/Josantonius/vue-simple-notify.git vue-simple-notify
 
 Ir al directorio:
 
-    $ cd vue-simple-notify
+    cd vue-simple-notify
 
 Instalar dependencias:
 
-    $ npm install
+    npm install
 
 Ejecutar [pruebas unitarias](test):
 
-    $ npm run test
+    npm run test
 
 Ejecutar [ESLint](https://eslint.org/) para validar que el estilo de código es compatible con el [Standar JavaScript](https://standardjs.com/):
 
-    $ npm run lint
+    npm run lint
 
 Ejecutar [serve](docs) con recarga en caliente:
 
-    $ npm run dev
+    npm run dev
 
 Montar [distribución](dist) con minificación:
 
-    $ npm run bundle
+    npm run bundle
 
 Montar [demo](docs) para producción con minificación:
 
-    $ npm run build
+    npm run build
 
 Ejecutar todo lo anterior:
 
-    $ npm run finish
+    npm run finish
 
-## ☑ Tareas pendientes
+## Patrocinar
 
-- [ ] Corregir error al intentar pasar las pruebas de ESlint en [Travis CI](.travis.yml).
-- [ ] Corregir error al intentar pasar las pruebas de E2E en [Travis CI](.travis.yml).
-- [ ] Añadir nueva funcionalidad.
-- [ ] Mejorar pruebas.
-- [ ] Mejorar documentación.
-
-## Contribuir
-
-Si deseas colaborar, puedes echar un vistazo a la lista de
-[issues](https://github.com/Josantonius/vue-simple-notify/issues) o [tareas pendientes](#-tareas-pendientes).
-
-**Pull requests**
-
-* [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Realiza modificaciones y ejecuta las [pruebas](#tests).
-* Crea una nueva rama (**branch**), **commit**, **push** y envíame un
-  [pull request](https://help.github.com/articles/using-pull-requests)
+Si este proyecto te ayuda a reducir el tiempo de desarrollo,
+[puedes patrocinarme](https://github.com/josantonius/lang/es-ES/README.md#patrocinar)
+para apoyar mi trabajo :blush:
 
 ## Licencia
 
-Este proyecto está licenciado bajo **licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más información.
+Este repositorio tiene una licencia [MIT License](LICENSE).
 
-## Copyright
-
-2018 Josantonius, [josantonius.com](https://josantonius.com/)
-
-Si te ha resultado útil, házmelo saber :wink:
-
-Puedes contactarme en [Twitter](https://twitter.com/Josantonius) o a través de mi [correo electrónico](mailto:hello@josantonius.com).
+Copyright © 2018-2022, [Josantonius](https://github.com/josantonius/lang/es-ES/README.md#contacto)

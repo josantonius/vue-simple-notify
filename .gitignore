@@ -5,3 +5,6 @@ selenium-debug.log
 test/unit/.eslintrc
 test/unit/coverage
 test/e2e/reports
+.repository.md
+vue-simple-notify.code-workspace
+.vscode/

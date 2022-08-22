@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## v1.0.4 - 2018-02-11
+## 2022-08-22
+
+* The repository was archived.
+
+## v1.0.5 - 2018-02-11
 
 * Watch was added to `items` prop.
 

@@ -1,6 +1,7 @@
 # Vue Simple Notify
 
-[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify) [![VueJS v2.x compatible](https://img.shields.io/badge/vue-2.x-41b883.svg)](https://vuejs.org/) [![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/614f0639cbc94aec809941172436fe2c)](https://www.codacy.com/app/Josantonius/vue-simple-notify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Josantonius/vue-simple-notify&amp;utm_campaign=Badge_Grade) [![Travis](https://travis-ci.org/Josantonius/vue-simple-notify.svg)](https://travis-ci.org/Josantonius/vue-simple-notify) [![Standard](https://img.shields.io/badge/standard-js-03a9f4.svg)](https://standardjs.com/) [![codecov](https://codecov.io/gh/Josantonius/vue-simple-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/Josantonius/vue-simple-notify) [![ KB](https://img.shields.io/badge/minified-~4kB-009688.svg)](dist) [![Dependency Status](https://beta.gemnasium.com/badges/github.com/Josantonius/vue-simple-notify.svg)](https://beta.gemnasium.com/projects/github.com/Josantonius/vue-simple-notify)
+[![NPM version](https://img.shields.io/npm/v/vue-simple-notify.svg)](https://www.npmjs.com/package/vue-simple-notify)
+[![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE)
 
 [Versión en español](README-ES.md)
 
@@ -8,7 +9,7 @@ Simple notify handler component for Vue.js.
 
 <p align="center">
   <a href="https://josantonius.github.io/vue-simple-notify/" title="Vue Simple Notify">
-    <img src="https://raw.githubusercontent.com/Josantonius/vue-simple-notify/master/vue-simple-notify.gif">
+    <img src="https://josantonius.github.io/vue-simple-notify/static/vue-simple-notify.gif">
   </a>
 </p>
 
@@ -21,10 +22,8 @@ Simple notify handler component for Vue.js.
 - [Events](#events)
 - [Methods](#methods)
 - [Tests](#tests)
-- [TODO](#-todo)
-- [Contribute](#contribute)
+- [Sponsor](#Sponsor)
 - [License](#license)
-- [Copyright](#copyright)
 
 ---
 
@@ -40,7 +39,7 @@ Simple notify handler component for Vue.js.
 
 Install the package:
 
-    $ npm install vue-simple-notify
+    npm install vue-simple-notify
 
 Register the component:
 
@@ -88,7 +87,7 @@ Use the component:
 
 Examples of use for this component:
 
-### - Using [CDN](#cdn):
+### - Using [CDN](#cdn)
 
 ```html
 <!DOCTYPE html>
@@ -118,7 +117,7 @@ Examples of use for this component:
 </html>
 ```
 
-### - Adding [items](#items):
+### - Adding [items](#items)
 
 ```html
 <vue-simple-notify
@@ -148,7 +147,7 @@ new Vue({
 })
 ```
 
-### - Setting the [delay](#delay) between notifications:
+### - Setting the [delay](#delay) between notifications
 
 ```html
 <vue-simple-notify
@@ -170,7 +169,7 @@ new Vue({
 })
 ```
 
-### - Listening to the [@onDismiss](#ondismiss) event:
+### - Listening to the [@onDismiss](#ondismiss) event
 
 ```html
 <vue-simple-notify
@@ -196,7 +195,7 @@ new Vue({
 })
 ```
 
-### - [Removing](#dismiss) items from the component.
+### - [Removing](#dismiss) items from the component
 
 ```html
 <vue-simple-notify
@@ -219,7 +218,7 @@ const vueSimpleNotify = new Vue({
 vueSimpleNotify.dismiss(1)
 ```
 
-### - [Removing](#clear) all elements.
+### - [Removing](#clear) all elements
 
 ```html
 <vue-simple-notify
@@ -316,72 +315,51 @@ Clear all notifications.
 vueSimpleNotify.clear()
 ```
 
-## Tests 
+## Tests
 
 Clone the repository:
 
-    $ git clone https://github.com/Josantonius/vue-simple-notify.git vue-simple-notify
+    git clone https://github.com/Josantonius/vue-simple-notify.git vue-simple-notify
 
 Go to the directory:
 
-    $ cd vue-simple-notify
+    cd vue-simple-notify
 
 Install dependencies:
 
-    $ npm install
+    npm install
 
 Run [unit tests](test):
 
-    $ npm run test
+    npm run test
 
 Run [ESLint](https://eslint.org/) to ensure that code style is compatible with [Standar JavaScript](https://standardjs.com/):
 
-    $ npm run lint
+    npm run lint
 
 Run [serve](docs) with hot reload:
 
-    $ npm run dev
+    npm run dev
 
 Build [distribution](dist) with minification:
 
-    $ npm run bundle
+    npm run bundle
 
 Build [demo](docs) for production with minification:
 
-    $ npm run build
+    npm run build
 
 Run all the above:
 
-    $ npm run finish
+    npm run finish
 
-## ☑ TODO
+## Sponsor
 
-- [ ] Fix error when trying to pass ESlint tests in [Travis CI](.travis.yml).
-- [ ] Fix error when trying to pass E2E tests in [Travis CI](.travis.yml).
-- [ ] Add new feature.
-- [ ] Improve tests.
-- [ ] Improve documentation.
-
-## Contribute
-
-If you would like to help, please take a look at the list of
-[issues](https://github.com/Josantonius/vue-simple-notify/issues) or the [To Do](#-todo) checklist.
-
-**Pull requests**
-
-* [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Make changes and run the [tests](#tests).
-* Create a **branch**, **commit**, **push** and send me a
-  [pull request](https://help.github.com/articles/using-pull-requests).
+If this project helps you to reduce your development time,
+[you can sponsor me](https://github.com/josantonius#sponsor) to support my open source work :blush:
 
 ## License
 
-This project is licensed under **MIT license**. See the [LICENSE](LICENSE) file for more info.
+This repository is licensed under the [MIT License](LICENSE).
 
-## Copyright
-
-2018 Josantonius, [josantonius.com](https://josantonius.com/)
-
-If you find it useful, let me know :wink:
-
-You can contact me on [Twitter](https://twitter.com/Josantonius) or through my [email](mailto:hello@josantonius.com).
+Copyright © 2018-2022, [Josantonius](https://github.com/josantonius#contact)
